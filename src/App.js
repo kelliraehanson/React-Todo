@@ -2,7 +2,7 @@ import React from 'react';
 // import ReactDOM from 'react-dom';
 import TodoList from './components/TodoComponents/TodoList';
 import TodoForm from './components/TodoComponents/TodoForm';
-// import StateStuff from './components/TodoComponents/StateStuff';
+import StateStuff from './components/TodoComponents/StateStuff';
 // import Todo from './components/TodoComponents/Todo';
 
 
@@ -90,6 +90,9 @@ class App extends React.Component {
     this.state = {
       characterList: todoData,
       task: '',
+      inputText: '',
+      inputTextTwo: '',
+      number: 0
     };
   }
 
@@ -135,15 +138,11 @@ class App extends React.Component {
     });
   };
 
-  // increment = ev => {
-  //   ev.preventDefault();
-  //   this.setState(prevState => ({ number: this.state.number + 1 }));
-  //   this.setState(prevState => ({ number: prevState.number + 1 }));
-  //   this.setState(prevState => ({ number: prevState.number + 1 }));
-  // };
-
-
-
+  increment = ev => {
+    ev.preventDefault();
+    this.setState(prevState => ({ number: this.state.number + 1 }));
+   
+  };
 
 
 
@@ -162,11 +161,13 @@ class App extends React.Component {
         <TodoForm
         clearsReds={this.clearReds}
           addNewCharacter={this.addNewCharacter}
+          inputText={this.state.inputText}
+          inputTextTwo={this.state.inputTextTwo}
           handleChanges={this.handleChanges}
           task={this.state.task}
         />
 
-        {/* <StateStuff number={this.state.number} increment={this.increment}/> */}
+        <StateStuff number={this.state.number} increment={this.increment}/>
 
 
       </div>

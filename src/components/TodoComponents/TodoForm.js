@@ -15,7 +15,7 @@ function TodoForm(props) {
       <button type="submit">Add Goal</button>
       {/* <button type="submit">Completed</button> */}
 
-      <button onClick={props.clearsReds}>Clears Completed</button>
+      <button onClick={props.clearReds}>Clears Completed</button>
     </form>
   );
 }
