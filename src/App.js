@@ -108,6 +108,7 @@ class App extends React.Component {
         { task: this.state.task, color: 'black', completed: false, id: Date.now() }
       ],
       task: ''
+      // inputText:''
     });
   };
 
@@ -138,6 +139,7 @@ class App extends React.Component {
     });
   };
 
+
   increment = ev => {
     ev.preventDefault();
     this.setState(prevState => ({ number: this.state.number + 1 }));
@@ -148,7 +150,7 @@ class App extends React.Component {
 
   render() {
 
-    console.log('render is running');
+    
     return (
       <div className="App">
       <h2>2019 GOALS</h2>
@@ -161,8 +163,8 @@ class App extends React.Component {
         <TodoForm
         clearsReds={this.clearReds}
           addNewCharacter={this.addNewCharacter}
-          inputText={this.state.inputText}
-          inputTextTwo={this.state.inputTextTwo}
+          // inputText={this.state.inputText}
+          // inputTextTwo={this.state.inputTextTwo}
           handleChanges={this.handleChanges}
           task={this.state.task}
         />
