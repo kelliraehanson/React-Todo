@@ -15,6 +15,13 @@
     padding-left: 20px;
   }
 
+  input {
+      height: 25px;
+      width: 335px;
+      cursor: pointer;
+      margin-top: 30px;
+  }
+
   
   button {
       height: 30px;

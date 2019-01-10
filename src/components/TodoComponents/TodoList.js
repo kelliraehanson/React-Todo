@@ -8,8 +8,13 @@ function TodoList(props) {
 
   return (
     <div>
-      {props.disneyDataList.map((character, index) => {
-        return <Todo character={character} key={index}/>;
+      {props.banana.map((character, index) => {
+        return <Todo character={character} key={index}
+        changeColor={props.changeColor}
+        
+        
+        
+        />;
       })}
     </div>
   );
