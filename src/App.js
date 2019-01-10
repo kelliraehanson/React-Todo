@@ -82,6 +82,55 @@ const todoData = [
     color: 'black',
   },
 
+  {
+    task: 'Learn to swing dance',
+    id: Date.now(),
+    completed: false,
+    color: 'black',
+  },
+
+  {
+    task: 'Find time to meditate consistently',
+    id: Date.now(),
+    completed: false,
+    color: 'black',
+  },
+
+  {
+    task: 'Travel to Europe with no real plan',
+    id: Date.now(),
+    completed: false,
+    color: 'black',
+  },
+
+  {
+    task: 'Strive to create less plastic waste',
+    id: Date.now(),
+    completed: false,
+    color: 'black',
+  },
+
+  {
+    task: 'Mentor a child in need/help with homework',
+    id: Date.now(),
+    completed: false,
+    color: 'black',
+  },
+
+  {
+    task: 'Buy/remodel a van to travel the country in',
+    id: Date.now(),
+    completed: false,
+    color: 'black',
+  },
+
+  {
+    task: 'Go outside. Throw away iPhone.',
+    id: Date.now(),
+    completed: false,
+    color: 'black',
+  },
+
 ];
 
 class App extends React.Component {
