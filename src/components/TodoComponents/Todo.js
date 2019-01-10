@@ -1,7 +1,7 @@
 import React from 'react';
 
-function ToDo(props) {
-    return <div>{props.todo.todoName}</div>;
+function Todo(props) {
+  return <div>{props.character.task}</div>;
 }
 
-export default ToDo;
+export default Todo;

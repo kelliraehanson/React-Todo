@@ -1,24 +1,21 @@
 import React from 'react';
 
-function ToDoForm(props) {
-    console.log('ToDo Form is re-rendering');
-    return (
-        <form onSubmit={props.addNewToDo}>
+function TodoForm(props) {
+    
+  return (
+    <form onSubmit={props.addNewCharacter}>
 
-        <input
-        value={props.ToDoName}
+      <input
+        value={props.task}
         type="text"
-        name="todoName"
-        placeholder="...todo"
+        name="task"
+        placeholder="DO MORE"
         onChange={props.handleChanges}
-        />
-
-        <button type="submit">Add Todo</button>
-
-        <button type="reset">Clear Completed</button>
-        
-        </form>
-    );
+      />
+      <button type="submit">Add Goal</button>
+      <button type="submit">Completed</button>
+    </form>
+  );
 }
 
-export default ToDoForm;
+export default TodoForm;
