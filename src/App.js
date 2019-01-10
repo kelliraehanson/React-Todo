@@ -111,7 +111,14 @@ const todoData = [
   },
 
   {
-    task: 'Mentor a child in need/help with homework',
+    task: 'Send more letters in the mail',
+    id: Date.now(),
+    completed: false,
+    color: 'black',
+  },
+
+  {
+    task: 'Mentor a child/help with homework',
     id: Date.now(),
     completed: false,
     color: 'black',
@@ -139,8 +146,8 @@ class App extends React.Component {
     this.state = {
       characterList: todoData,
       task: '',
-      inputText: '',
-      inputTextTwo: '',
+      // inputText: '',
+      // inputTextTwo: '',
       number: 0
     };
   }
