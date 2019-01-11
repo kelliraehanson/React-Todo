@@ -4,8 +4,8 @@
 //   return (
 
 //     <h1>
-//       onClick={() => props.changeColor(props.characterOnProps.id)}
-//       className={`character-header ${props.characterOnProps.color}`}
+//       onClick={() => props.changeColor(props.task.id)}
+//       className={`character-header ${props.task.color}`}
 //     >
 //   {props.character.task}
 //   </h1>

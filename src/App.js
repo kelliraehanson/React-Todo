@@ -111,13 +111,6 @@ const todoData = [
   },
 
   {
-    task: 'Send more letters in the mail',
-    id: Date.now(),
-    completed: false,
-    color: 'black',
-  },
-
-  {
     task: 'Mentor a child/help with homework',
     id: Date.now(),
     completed: false,
